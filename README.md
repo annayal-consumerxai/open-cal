@@ -1,5 +1,7 @@
 # Open Cal
 
+> By [An Nayal](https://annayal.com) · used at [Agniverse](https://agniverse.co) · more free tools at [annayal.com/open-source](https://annayal.com/open-source)
+
 Booking pages that run on your own Google Calendar. One Next.js app, one Supabase database, one Google service account. No per-seat pricing.
 
 **Overview, setup walkthrough and the free setup playbook:** [agniverse.co/open-source/open-cal](https://agniverse.co/open-source/open-cal)
@@ -51,7 +53,7 @@ One service account, many hosts. Each Google call is made as the host (`subject`
 You need about 20 minutes, a Google Workspace super admin, a Supabase account and a Vercel account.
 
 ```bash
-git clone https://github.com/Git-Agni/open-cal.git
+git clone https://github.com/annayal-consumerxai/open-cal.git
 ```
 
 ### 1. Supabase
