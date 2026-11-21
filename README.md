@@ -1,6 +1,6 @@
 # Open Cal
 
-> By [An Nayal](https://annayal.com) · used at [Agniverse](https://agniverse.co) · more free tools at [annayal.com/open-source](https://annayal.com/open-source)
+> Built at [Agniverse](https://agniverse.co), by [An Nayal](https://annayal.com) · more free tools at [annayal.com/open-source](https://annayal.com/open-source)
 
 Booking pages that run on your own Google Calendar. One Next.js app, one Supabase database, one Google service account. No per-seat pricing.
 
@@ -115,7 +115,6 @@ The app owns the whole domain: `/<host>` and `/<host>/<event>` are public, `/b/<
 | `DEFAULT_HOST` | no | A host slug. The bare domain redirects to that page. |
 | `HOST_EMAILS` | no | See below. |
 | `IP_HASH_SALT` | no | Key for hashing guest IPs (rate limit). Defaults to `ADMIN_PASSWORD`. |
-| `HIDE_CREDIT` | no | `1` removes the "Booked with open-cal by Agniverse" line under the pages. |
 | `CRON_SECRET` | recommended | Any long random string. Lets the Vercel cron call `/api/jobs/cal-sync`. |
 
 `HOST_EMAILS=gmail` turns on the host notification: each new, moved or cancelled booking sends the host an email card from their own mailbox with the guest's answers, reply-to the guest. Needs the Gmail API enabled and the `gmail.send` scope on the delegation entry. Leave it unset and Google's own calendar notifications are all you get.
@@ -162,8 +161,10 @@ Local dev talks to the real Google calendars of the hosts you configure, so a te
 
 ## Credits
 
-Built by [Agniverse](https://agniverse.co). The "Booked with open-cal by Agniverse" line under each page is on by default; set `HIDE_CREDIT=1` to turn it off. If you ship one, tag [@consumerxai](https://x.com/consumerxai), we'd love to see it.
+The "Built at Agniverse, by An Nayal" line under each page is part of the app. If you ship one, tag [@consumerxai](https://x.com/consumerxai), we'd love to see it.
 
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+Built at [Agniverse](https://agniverse.co), by [An Nayal](https://annayal.com)

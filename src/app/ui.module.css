@@ -481,6 +481,12 @@
 }
 .foot a {
   color: var(--muted);
+  text-decoration: none;
+}
+
+.foot a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 @media (max-width: 860px) {
